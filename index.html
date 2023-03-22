@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship Form</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>
+        RATE YOUR MENTORSHIP
+      </h1>
+      <p class="subtitle">
+        It's time to evaluate your mentor. Let's go there.
+      </p>
+
+      <img id="bubble" src="images/img1.png" alt="speech bubble with five stars inside">
+
+      <p class="font-staatliches">Personal information</p>
+    </header>
+  </div>
+
+  <main>
+
+    <div class="form_itens">
+      <form>
+        <fieldset>
+
+          <div class="input-wrapper">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="email">Email <span>(Enter a valid email address)</span> </label>
+            <input type="email" id="email" />
+          </div>
+
+          <p class="legend">MENTOR INFORMATION</p>
+
+          <div class="input-wrapper">
+            <label for="mentor-name">Select who was your mentor</label>
+            <select id=mentor-name>
+              <option value="Giannis Antetokounmpo">Giannis Antetokounmpo</option>
+              <option value="Charles Barkley">Charles Barkley</option>
+              <option value="Rick Barry">Rick Barry</option>
+              <option value="Vince Carter">Vince Carter</option>
+              <option value="Tyson Chandler">Tyson Chandler</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="Feedback"> About the mentor</label>
+            <textarea id="Feedback"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="doubts">
+            <label for="doubts"> All my doubts were clarified during mentoring.</label>
+          </div>
+
+          <p class="final-text">Scheduling next mentorship</p>
+
+            
+            <div class="input-wrapper">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+
+            <div class="input-wrapper">
+              <label for="start">Start</label>
+              <input type="time" id="start" />
+
+            <div class="input-wrapper">
+              <label for="end">End</label>
+              <input type="time" id="end" />
+
+
+        </fieldset>
+
+      </form>
+
+    </div>
+
+    <button>
+      <img src="images/Button.png" alt="button with name save">
+    </button>
+
+  </main>
+
+</body>
+</html>
