@@ -25,79 +25,87 @@
 
       <p class="font-staatliches">Personal information</p>
     </header>
-  </div>
 
-  <main>
+    <main>
 
-    <div class="form_itens">
-      <form>
-        <fieldset>
+      <div class="form_itens">
+        <form id="my-form" >
+          <fieldset>
 
-          <div class="input-wrapper">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-          </div>
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input 
+              type="text"
+               id="name"
+               required />
+            </div>
 
-          <div class="input-wrapper">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" />
-          </div>
+            <div class="input-wrapper">
+              <label for="surname">Surname</label>
+              <input 
+              type="text"
+               id="surname"
+               required />
+            </div>
 
-          <div class="input-wrapper">
-            <label for="email">Email <span>(Enter a valid email address)</span> </label>
-            <input type="email" id="email" />
-          </div>
+            <div class="input-wrapper">
+              <label for="email">Email <span>(Enter a valid email address)</span> </label>
+              <input 
+              type="email" 
+              id="email" 
+              required />
+            </div>
 
-          <p class="legend">MENTOR INFORMATION</p>
+            <p class="legend">MENTOR INFORMATION</p>
 
-          <div class="input-wrapper">
-            <label for="mentor-name">Select who was your mentor</label>
-            <select id=mentor-name>
-              <option value="Giannis Antetokounmpo">Giannis Antetokounmpo</option>
-              <option value="Charles Barkley">Charles Barkley</option>
-              <option value="Rick Barry">Rick Barry</option>
-              <option value="Vince Carter">Vince Carter</option>
-              <option value="Tyson Chandler">Tyson Chandler</option>
-            </select>
-          </div>
+            <div class="input-wrapper">
+              <label for="mentor-name">Select who was your mentor</label>
+              <select id=mentor-name>
+                <option value="Giannis Antetokounmpo">Giannis Antetokounmpo</option>
+                <option value="Charles Barkley">Charles Barkley</option>
+                <option value="Rick Barry">Rick Barry</option>
+                <option value="Vince Carter">Vince Carter</option>
+                <option value="Tyson Chandler">Tyson Chandler</option>
+              </select>
+            </div>
 
-          <div class="input-wrapper">
-            <label for="Feedback"> About the mentor</label>
-            <textarea id="Feedback"></textarea>
-          </div>
+            <div class="input-wrapper">
+              <label for="Feedback"> About the mentor <span>(100 characters minimum)</span></label>
+              <textarea 
+               id="Feedback" required minlenght="100">
+               </textarea>
+            </div>
 
-          <div class="checkbox-wrapper">
-            <input type="checkbox" id="doubts">
-            <label for="doubts"> All my doubts were clarified during mentoring.</label>
-          </div>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="doubts">
+              <label for="doubts"> All my doubts were clarified during mentoring.</label>
+            </div>
 
-          <p class="final-text">Scheduling next mentorship</p>
+            <p class="final-text">Scheduling next mentorship</p>
 
-            
+
             <div class="input-wrapper">
               <label for="date">Date</label>
               <input type="date" id="date" />
 
-            <div class="input-wrapper">
-              <label for="start">Start</label>
-              <input type="time" id="start" />
+              <div class="input-wrapper">
+                <label for="start">Start</label>
+                <input type="time" id="start" />
 
-            <div class="input-wrapper">
-              <label for="end">End</label>
-              <input type="time" id="end" />
+                <div class="input-wrapper">
+                  <label for="end">End</label>
+                  <input type="time" id="end" />
 
+          </fieldset>
+        </form>
+      </div>
 
-        </fieldset>
+      <footer>
+        <input class=button type="submit" form="my-form" value="Save">
+      </footer>
+    </main>
 
-      </form>
-
-    </div>
-
-    <button>
-      <img src="images/Button.png" alt="button with name save">
-    </button>
-
-  </main>
+  </div>
 
 </body>
 </html>
