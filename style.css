@@ -98,7 +98,6 @@ fieldset {
   display: flex;
   flex-direction: column;
 
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -137,7 +136,7 @@ fieldset {
   appearance: none;
   -webkit-appearance: none;
   height: 166.59px;
-  padding: 25px;
+  padding: 10px;
 }
 
 span {
@@ -211,8 +210,38 @@ span {
   outline: 2px solid #2a78c6;
 }
 
-button {
-  border: none;
-  margin-top: 30px;
-  margin-left: 50px;
+footer {
+  width: 622px;
+  margin-left: 55px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer .button {
+  background: #F67669;
+  border: 0;
+  border-radius: 8px;
+  height: 51px;
+
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #253B51;
+}
+
+footer .button:hover {
+  background: #e35c4d;
+  color: #FFFFFF
+}
+
+.input:invalid {
+  border: 1px solid #ff1010;
+}
+
+textarea:invalid {
+  border: 1px solid #ff1010;
 }
